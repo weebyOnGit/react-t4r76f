@@ -1,16 +1,23 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 
-const toastify= () => {
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-  const genToast = () =>{
-    console.log("yes")
-  }
+const toastify = () => {
+  const genToast = () => {
+    toast('Message Send');
+    console.log('yes');
+  };
 
   return (
     <>
-      <button id="sub" onClick={genToast}> 🎲 </button>
+      <button id="sub" onClick={genToast}>
+        {' '}
+        Make Toast{' '}
+      </button>
+      <ToastContainer />
     </>
   );
 };
 
-export default username;
+export default toastify;
