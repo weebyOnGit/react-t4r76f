@@ -11,7 +11,7 @@ const username = () => {
     usernameRef.current.value = generateRandomUsername();
   };
 
-  const tailwindUrl = 'https://play.tailwindcss.com/gVfxWnRbXO';
+  const tailwindUrl = 'https://play.tailwindcss.com/GqIJK7c5AO';
 
   return (
     <>
